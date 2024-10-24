@@ -26,24 +26,17 @@ int main() {
     char confirm = 'n';
 
     do {
-        printf("\nChoose an operation (^, #):\n");
-        printf("^: Square of a number\n");
-        printf("#: Cube of a number\n");
-       
+        printf("\nChoose an operation (+, -, *, /, ^, #, i):\n");
+        printf("i: Inverse of a number\n");
         
         printf("Enter operation: ");
         scanf(" %c", &operation);
 
         switch (operation) {
-            case '^':
+            case 'i':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon... %d \n", a*a);
-                break;
-            case '#':
-                printf("Enter an integer: ");
-                scanf("%d", &a);
-                printf("Will be implemented soon... %d \n",a*a*a);
+                printf("Will be implemented soon...\n");
                 break;
             default:
                 printf("Invalid operation. Please try again.\n");
@@ -55,4 +48,3 @@ int main() {
 
     return 0;
 }
-
